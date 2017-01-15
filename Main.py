@@ -20,7 +20,8 @@ def ConvertFile(inFile, isVerbose):
     if extension.lower() == "obj":
         print "OBJ File found"
         level = OBJ_Reader.OBJToLevel(inFile, isVerbose)
-
+    else:
+        print "Unknown filetype. Skipping."
     if level is None:
         return False
 
