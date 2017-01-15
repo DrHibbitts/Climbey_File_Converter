@@ -15,7 +15,9 @@ If you have multiple instances of a material and it gives names like Metal.001, 
 
 **Script Usage**
 
-Currently only OBJ files are supported and the path to the file to convert is hard-coded into Main.py. To trigger the convert you would just run "python Main.py" in your terminal. This is only temporary, proper file support will be added soon.
+The script should be run from Main.py and takes various command line options. To see a full list of options run "python Main.py --help" in your terminal. 
+
+For example, to recursively walk directories from the script location and convert them all in parallel you would do "python Main.py -r --parallel"
 
 **Examples**
 
